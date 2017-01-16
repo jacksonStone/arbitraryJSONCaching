@@ -1,0 +1,30 @@
+doctype html
+html.
+  <h1>Open console, and experiment with sendUp and pullDown!</h1>
+  
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+  
+  <script>
+  
+  function sendUp(payload){
+    $.ajax({
+      url: "/mirrormirror",
+      method:"POST",
+      data:payload,
+      success:function(res){
+        console.log(res);
+      }
+    });
+  }
+  
+  function pullDown(key){
+    $.ajax({
+      url: "/mirrormirror?key="+key,
+      method:"GET",
+      success:function(res){
+        console.log(res);
+      }
+    });
+  }
+  
+  </script>

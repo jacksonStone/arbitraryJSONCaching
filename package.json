@@ -1,0 +1,28 @@
+{
+  "name": "arbitraryjsoncaching",
+  "version": "1.0.0",
+  "description": "My attempt to cache arbitrary JSON in the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksonStone/arbitraryJSONCaching.git"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "Jackson A Stone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacksonStone/arbitraryJSONCaching/issues"
+  },
+  "homepage": "https://github.com/jacksonStone/arbitraryJSONCaching#readme",
+  "dependencies": {
+    "aws-sdk": "^2.7.14",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "pug": "^2.0.0-beta6"
+  }
+}
